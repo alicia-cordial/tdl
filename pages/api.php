@@ -6,9 +6,43 @@ require_once('../class/user.php');
 
 session_start();
 
+
+
+//LOG IN
+
+//if (isset($_SESSION['user'])) {
+   // header("Location: ../index.php");
+//}
+
+if (isset($_POST['login'])) {
+
+    $validator = new validator();
+
+    $login = htmlspecialchars($_POST['login']);
+    $password = htmlspecialchars($_POST['password2']);
+
+    if ($validator->passwordConnect($login, $password) == 0) {
+        $error = "False login or password";
+    } else {
+        $user = new user();
+        $user->connect($login);
+
+        $_SESSION['user'] = $user;
+
+            header("Location: ../index.php");
+
+    }
+
+}
+
+
+
+
+
+
 //REGISTER
 
-if(isset($_POST['Register'])){
+if(isset($_POST['register'])){
 
     $validator = new validator();
 
@@ -39,36 +73,4 @@ if(isset($_POST['Register'])){
 }
 
 
-
-
-
-
-
-
-//LOG IN
-
-//if (isset($_SESSION['user'])) {
-   // header("Location: ../index.php");
-//}
-
-if (isset($_POST['Login'])) {
-
-    $validator = new validator();
-
-    $login = htmlspecialchars($_POST['login']);
-    $password = htmlspecialchars($_POST['password2']);
-
-    if ($validator->passwordConnect($login, $password) == 0) {
-        $error = "False login or password";
-    } else {
-        $user = new user();
-        $user->connect($login);
-
-        $_SESSION['user'] = $user;
-
-            header("Location: ../index.php");
-
-    }
-
-}
 
