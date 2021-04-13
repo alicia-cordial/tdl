@@ -1,9 +1,9 @@
 <?php
+ 
+    require_once('includes/database.php');
+    session_start();
+    ?>
 
-    require_once('class/database.php');
-
-
-?>
 
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USER SPACE</title>
+    <title>To Do List / Login</title>
 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/e9a44ab6cf.js" crossorigin="anonymous"></script>
@@ -21,8 +21,7 @@
   <header>
     <div class="navbar">
       <div class="title">
-        <h1>To do list </h1>
-        <h2>User Space</h2>
+        <p>To do list </p>
       </div>
 
 
@@ -34,39 +33,37 @@
 
             </div>
             <form method="post" class="form_index">
-              <h3> Se connecter </h3>
+              <h1> Se connecter </h1>
                 <div>
-                    <input type="text" id="login" placeholder="Login">
+                    <input type="text" id="login" placeholder="E-mail">
                 </div>
                 <div>
-                    <input type="password" id="password2" placeholder="password" autocomplete="on">
+                    <input type="password" id="password" placeholder="Mot de passe" autocomplete="on">
                 </div>
                 <div class="center_btn">
-                    <input type="submit" id="login" value="login" class="btn_index">
+                    <input type="submit" id="connexion" value="Valider" class="btn_index">
                 </div>
             </form>
             <p class="link_co"> Pas encore inscrit ? <i class="fas fa-arrow-right"></i> <span id="form_inscription"> Inscription </span></p>
         </section>
-
-
 <!-- FORMULAIRE INSCRIPTION -->
         <section class="module_co" id="inscription">
             <div id="final">
 
             </div>
             <form method="post" class="form_index">
-              <h3> Créer un compte </h3>
+              <h1> Créer un compte </h1>
                 <div>
-                    <input type="text" id="username" placeholder="login">
+                    <input type="text" id="username" placeholder="E-mail">
                 </div>
                 <div>
-                    <input type="password" id="password" placeholder="password" autocomplete="on">
+                    <input type="password" id="insc_password" placeholder="Mot de passe" autocomplete="on">
                 </div>
                 <div>
-                    <input type="password" id="passwordcheck" placeholder="check password" autocomplete="on">
+                    <input type="password" id="conf_password" placeholder="Confirmer le mot de passe" autocomplete="on">
                 </div>
                 <div class="center_btn">
-                    <input type="submit" id="register" value="register" class="btn_index">
+                    <input type="submit" id="sinscrire" value="Valider" class="btn_index">
                 </div>
 
             </form>
@@ -77,6 +74,6 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/module_co.js"></script>
 </body>
 </html>
