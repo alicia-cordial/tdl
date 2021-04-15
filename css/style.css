@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: lavender;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+/******* Header *******/
+
+
+/*.title {
+    margin: auto;
+}*/
+
+header {
+    height: 60px;
+    background-color: mintcream;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+header div {
+    line-height: 50px;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    opacity: 0.8;
+    justify-content: center;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header i {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: mintcream;
+    margin-top: 25px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+/******** Index *************/
+
+.form_index {
+    background-color: lemonchiffon;
+    padding: 15%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+.module_co {
+    width: 40%;
+}
+
+.form_index input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #81dafc;
+    margin: 5%;
+    width: 100%;
+    font-size: 15px;
+}
+
+.form_index input[type="password"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #81dafc;
+    margin: 5%;
+    width: 100%;
+    font-size: 15px;
+}
+
+.form_index input[type="submit"] {
+    background: #81dafc;
+    border: none;
+    margin-top: 15%;
+    width: 50%;
+    cursor: pointer;
+    color: black;
+}
+
+.center_btn {
+    text-align: center;
+}
+
+.form_index h1 {
+    text-align: center;
+    margin: 5% 5% 10% 10%;
+    font-weight: normal;
+    color: pink;
+    font-size: 25px;
+}
+
+.btn_index {
+    border: none;
+    padding: 5% 6% 5% 6%;
+    border-radius: 10px;
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+
+
+/******* To do list ******/
+
+.contain {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.autre {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 209, 243, 0.7);
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+    padding: 3% 1% 3% 1%;
+    min-height: 200px;
+}
+
+.container i {
+    color: rgba(129, 218, 137, 0.8);
+    font-size: 90%;
+}
+
+#todo_list {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#todo_list li {
+    font-size: 14px;
+    text-align: left;
+    background-color: white;
+    margin: 2%;
+    border-radius: 10px;
+    padding: 5%;
+    box-shadow: 1px 2px 5px lightgrey;
+    cursor: pointer;
+}
+
+#add_btn_task {
+    border: none;
+    padding: 5% 6% 5% 6%;
+    border-radius: 50%;
+    background-color: rgba(255, 190, 97, 0.9);
+}
+
+#add_btn_task i {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#name_task {
+    border: none;
+    height: 2.5em;
+    border-radius: 10px;
+    width: 80%;
+}
+
+ ::placeholder {
+    padding-left: 5%;
+}
+
+
+/***** Tasks done ****/
+
+#container_done i {
+    font-size: 110%;
+}
+
+#done_list {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#done_list li {
+    font-size: 14px;
+    text-align: left;
+    background-color: white;
+    margin: 2%;
+    border-radius: 10px;
+    padding: 5%;
+    box-shadow: 1px 2px 5px lightgrey;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: lightgrey;
+}
+
+
+/***** formulaire ****/
+
+#tasks_input form {
+    text-align: center;
+}
+
+#tasks_input p {
+    margin-bottom: 30px;
+}
+
+#form_connexion {
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+#form_connexion:hover {
+    opacity: 1;
+}
+
+#form_inscription {
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+#form_inscription:hover {
+    opacity: 1;
+}
+
+.link_co {
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* FORM MODIFICATION */
+
+#form_modif {
+    background-color: white;
+    padding: 10%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: 10%
+}
+
+#form_modif #name_task_modif {
+    border-radius: 15px;
+    margin-bottom: 3%;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    align-self: center;
+}
+
+#form_modif p button {
+    width: 100%;
+    height: 5vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #E5B527;
+    color: white;
+    font-weight: bold;
+}

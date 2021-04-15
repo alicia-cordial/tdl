@@ -11,7 +11,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List / Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <title>TO DO LIST- LOGIN</title>
 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/e9a44ab6cf.js" crossorigin="anonymous"></script>
@@ -20,9 +22,8 @@
 <body>
   <header>
     <div class="navbar">
-      <div class="title">
-        <p>To do list </p>
-      </div>
+ 
+    <h1>TO DO LIST- LOGIN</h1>
 
 
     </div>
@@ -33,9 +34,9 @@
 
             </div>
             <form method="post" class="form_index">
-              <h1> Se connecter </h1>
+              <h2> Se connecter </h2>
                 <div>
-                    <input type="text" id="login" placeholder="E-mail">
+                    <input type="text" id="login" placeholder="Login">
                 </div>
                 <div>
                     <input type="password" id="password" placeholder="Mot de passe" autocomplete="on">
@@ -52,9 +53,9 @@
 
             </div>
             <form method="post" class="form_index">
-              <h1> Créer un compte </h1>
+              <h2> Créer un compte </h2>
                 <div>
-                    <input type="text" id="username" placeholder="E-mail">
+                    <input type="text" id="username" placeholder="Login">
                 </div>
                 <div>
                     <input type="password" id="insc_password" placeholder="Mot de passe" autocomplete="on">
