@@ -5,6 +5,15 @@ var connexion = $('#connect'); // formulaire connexion
 var formins = $('#form_inscription'); // lien vers le formulaire d'inscription
 var formco = $('#form_connexion'); // lien vers le formulaire de connexion
 
+
+
+
+
+
+
+
+
+//fonctions pour qu'un seul formulaire ne s'affiche
 inscription.hide();
 
 formins.click(function() {
@@ -24,6 +33,10 @@ formco.click(function() {
 });
 
 // FIN AFFICHAGE DES FORMS
+
+
+
+
 
 
 // TRAITEMENT DE LA CONNEXION
@@ -47,7 +60,7 @@ $('#connexion').click(function(e) {
             } else {
                 // Le membre n'a pas été connecté. (data vaut ici "failed")
 
-                $("#resultat").html("<p>Erreur lors de la connexion...</p>");
+                $("#resultat").html("<p>Mot de passe ou login pas valide...</p>");
             }
         },
         'text'
@@ -71,10 +84,10 @@ $('#sinscrire').click(function(e) {
 
         function(data) {
             if (data == 'Success') {
-                $("#final").html("<p>Vous venez d'être inscrit</p>");
+                $("#final").html("<p>Félicitations !!</p>");
                 window.location.href = "todolist.php";
             } else {
-                $("#final").html("<p>Username déjà pris, ou vos mots de passe ne sont pas identiques</p>");
+                $("#final").html("<p>Problèmes d'enregistrations, réésayer!</p>");
                 console.log(data);
             }
         },

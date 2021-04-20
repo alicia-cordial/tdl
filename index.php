@@ -30,45 +30,61 @@
   </header>
     <main>
         <section class="module_co" id="connect">
-            <div id="resultat">
+          
 
-            </div>
+            <h2> Se connecter </h2>
+
             <form method="post" class="form_index">
-              <h2> Se connecter </h2>
+            
                 <div>
+                    <label for="login">Login</label><br>
                     <input type="text" id="login" placeholder="Login">
                 </div>
+
                 <div>
-                    <input type="password" id="password" placeholder="Mot de passe" autocomplete="on">
+                <label for="password">Password</label><br>
+                    <input type="password" id="password" placeholder="Mot de passe">
                 </div>
+
                 <div class="center_btn">
                     <input type="submit" id="connexion" value="Valider" class="btn_index">
                 </div>
+                <div id="resultat"></div>
             </form>
-            <p class="link_co"> Pas encore inscrit ? <i class="fas fa-arrow-right"></i> <span id="form_inscription"> Inscription </span></p>
+
+
+            <p class="link_co"> <span id="form_inscription"> Pas encore inscrit ? <i class="fas fa-arrow-right"></i> Inscription </span></p>
         </section>
 <!-- FORMULAIRE INSCRIPTION -->
         <section class="module_co" id="inscription">
-            <div id="final">
+           
+            <h2> Créer un compte </h2>
 
-            </div>
             <form method="post" class="form_index">
-              <h2> Créer un compte </h2>
+             
                 <div>
-                    <input type="text" id="username" placeholder="Login">
+                    <label for="login">Login</label><br>
+                    <input type="text" id="username" placeholder="Login" maxlength="20" pattern="[a-zA-Z0-9-_.]{1,20}" title="caractères acceptés : a-zA-Z0-9-_." required="required" value="<?php if (isset($_POST['login'])) { echo htmlspecialchars($_POST['login']);} ?>">
                 </div>
+
                 <div>
-                    <input type="password" id="insc_password" placeholder="Mot de passe" autocomplete="on">
+                <label for="password">Password</label><br>
+                    <input type="password" id="insc_password" placeholder="Mot de passe" required="required">
                 </div>
+
                 <div>
-                    <input type="password" id="conf_password" placeholder="Confirmer le mot de passe" autocomplete="on">
+                <label for="password">Password Check</label><br>
+                    <input type="password" id="conf_password" placeholder="Confirmer le mot de passe" required="required">
                 </div>
+                
                 <div class="center_btn">
                     <input type="submit" id="sinscrire" value="Valider" class="btn_index">
                 </div>
 
+                <div id="final"> </div>
+
             </form>
-            <p class="link_co">Revenir au <span id="form_connexion">login</span></p>
+            <p class="link_co"> <span id="form_connexion"> Revenir au login</span></p>
         </section>
     </main>
     <footer></footer>
