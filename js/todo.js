@@ -4,7 +4,7 @@ function sleep(milliseconds) {
     do {
         currentDate = Date.now();
     } while (currentDate - date < milliseconds);
-}
+} //horaire auto
 
 $(function() {
 
@@ -194,5 +194,3 @@ $(function() {
 
 
 })
-
-// Update des tasks
