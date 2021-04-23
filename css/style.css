@@ -15,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    font-family: 'Inconsolata', monospace;
 }
 
 main {
@@ -274,6 +275,9 @@ footer {
 .link_co {
     margin-bottom: 10%;
     text-align: center;
+    background-color: mediumpurple;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 input:focus {
@@ -307,7 +311,7 @@ input:focus {
     padding-right: 2%;
     border-radius: 15px;
     text-align: center;
-    background-color: #E5B527;
+    background-color: mediumpurple;
     color: white;
     font-weight: bold;
 }
